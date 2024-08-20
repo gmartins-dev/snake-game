@@ -2,7 +2,7 @@
 
 ## Overview
 
-This API allows you to start a game of Snake and validate moves. The game runs on a customizable grid, where the snake can eat fruits, grow, and score points.
+This API allows you to start a game of Snake and validate moves. The game runs on a customizable grid, where the snake can eat apples, grow, and score points.
 
 ## Base URL
 
@@ -24,7 +24,7 @@ This API allows you to start a game of Snake and validate moves. The game runs o
   ```
 
 - **Response**:
-  - Returns the initial game state, including grid size, snake position, fruit position, and score.
+  - Returns the initial game state, including grid size, snake position, apple position, and score.
 
 ### 2. Validate Moves
 
@@ -39,7 +39,7 @@ This API allows you to start a game of Snake and validate moves. The game runs o
   ]
   ```
 - **Responses**:
-  - **200 OK**: Updated game state with snake position, fruit position, and score.
+  - **200 OK**: Updated game state with snake position, apple position, and score.
   - **400 Bad Request**: Game over if the snake hits a wall or invalid move is made. Invalid JSON returns an error.
 
 ## Notes
