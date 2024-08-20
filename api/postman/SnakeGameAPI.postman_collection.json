@@ -17,13 +17,9 @@
         "url": {
           "raw": "http://localhost:3001/start",
           "protocol": "http",
-          "host": [
-            "localhost"
-          ],
+          "host": ["localhost"],
           "port": "3001",
-          "path": [
-            "start"
-          ]
+          "path": ["start"]
         }
       },
       "response": []
@@ -45,13 +41,9 @@
         "url": {
           "raw": "http://localhost:3001/validate",
           "protocol": "http",
-          "host": [
-            "localhost"
-          ],
+          "host": ["localhost"],
           "port": "3001",
-          "path": [
-            "validate"
-          ]
+          "path": ["validate"]
         }
       },
       "response": []
@@ -73,13 +65,9 @@
         "url": {
           "raw": "http://localhost:3001/validate",
           "protocol": "http",
-          "host": [
-            "localhost"
-          ],
+          "host": ["localhost"],
           "port": "3001",
-          "path": [
-            "validate"
-          ]
+          "path": ["validate"]
         }
       },
       "response": []
@@ -101,13 +89,9 @@
         "url": {
           "raw": "http://localhost:3001/validate",
           "protocol": "http",
-          "host": [
-            "localhost"
-          ],
+          "host": ["localhost"],
           "port": "3001",
-          "path": [
-            "validate"
-          ]
+          "path": ["validate"]
         }
       },
       "response": []
@@ -129,13 +113,9 @@
         "url": {
           "raw": "http://localhost:3001/validate",
           "protocol": "http",
-          "host": [
-            "localhost"
-          ],
+          "host": ["localhost"],
           "port": "3001",
-          "path": [
-            "validate"
-          ]
+          "path": ["validate"]
         }
       },
       "response": []
@@ -157,13 +137,9 @@
         "url": {
           "raw": "http://localhost:3001/validate",
           "protocol": "http",
-          "host": [
-            "localhost"
-          ],
+          "host": ["localhost"],
           "port": "3001",
-          "path": [
-            "validate"
-          ]
+          "path": ["validate"]
         }
       },
       "response": []
