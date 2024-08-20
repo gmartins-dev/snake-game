@@ -1,0 +1,172 @@
+{
+  "info": {
+    "name": "Snake Game API",
+    "description": "API for the Snake Game",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Start Game",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:3001/start",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3001",
+          "path": [
+            "start"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Validate Moves - Valid Moves",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\n    {\"x\": 1, \"y\": 0},\n    {\"x\": 0, \"y\": 1}\n]"
+        },
+        "url": {
+          "raw": "http://localhost:3001/validate",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3001",
+          "path": [
+            "validate"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Validate Moves - Snake Eats Apple",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\n    {\"x\": 1, \"y\": 0},\n    {\"x\": 0, \"y\": 1}\n]"
+        },
+        "url": {
+          "raw": "http://localhost:3001/validate",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3001",
+          "path": [
+            "validate"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Validate Moves - Snake Hits Wall",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\n    {\"x\": -1, \"y\": 0}\n]"
+        },
+        "url": {
+          "raw": "http://localhost:3001/validate",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3001",
+          "path": [
+            "validate"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Validate Moves - Multiple Moves",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\n    {\"x\": 1, \"y\": 0},\n    {\"x\": 1, \"y\": 0},\n    {\"x\": 0, \"y\": 1},\n    {\"x\": 0, \"y\": 1}\n]"
+        },
+        "url": {
+          "raw": "http://localhost:3001/validate",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3001",
+          "path": [
+            "validate"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Validate Moves - Invalid JSON",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "invalid_json"
+        },
+        "url": {
+          "raw": "http://localhost:3001/validate",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3001",
+          "path": [
+            "validate"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
