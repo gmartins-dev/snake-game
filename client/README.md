@@ -45,10 +45,11 @@ or
 yarn start
 ```
 
-The application will be available at [http://localhost:3000](http://localhost:3000).
+The application will be available at [http://localhost:5173](http://localhost:5173).
 
 ## Project Structure
 
+```
 snake-game/client
 ├── public/
 │ ├── index.html
@@ -65,6 +66,7 @@ snake-game/client
 ├── package.json
 ├── tsconfig.json
 └── ...
+```
 
 ### Main Components
 
