@@ -27,6 +27,7 @@ const GameBoard: React.FC = () => {
 
   return (
     <>
+      <h1 className='title'>Snake Game 🐍</h1>
       <div className='score'>
         Score: {gameState ? gameState.score : 'Loading...'}
       </div>

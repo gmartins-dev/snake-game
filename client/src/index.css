@@ -10,7 +10,10 @@ body {
 }
 
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .game-board {
@@ -43,7 +46,15 @@ body {
   background-color: #f44336;
 }
 
+.title {
+  font-size: 26px;
+  max-width: 200px;
+}
+
 .score {
-  margin-top: 10px;
+  max-width: 200px;
+  margin-bottom: 10px;
   color: #e0e0e0;
+  align-self: flex-end;
+
 }
