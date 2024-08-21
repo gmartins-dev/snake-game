@@ -1,50 +1,97 @@
-# React + TypeScript + Vite
+# Snake Game Frontend Documentation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Simply version using React and Golang of the nostalgic snake game from the old Nokia phones
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is the frontend application for the Snake Game, built using React. It communicates with the backend API to manage the game state.
 
-## Expanding the ESLint configuration
+## Setup Instructions
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Prerequisites
 
-- Configure the top-level `parserOptions` property like this:
+- Node.js (version 14.x or higher)
+- npm (version 6.x or higher) or yarn (version 1.x or higher)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Installation
+
+1. Clone the repository:
+
+```shell
+git clone <repository-url>
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Install the dependencies:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```shell
+npm install
 ```
+
+or
+
+```shell
+yarn install
+```
+
+3. Start the development server:
+
+```shell
+npm start
+```
+
+or
+
+```shell
+yarn start
+```
+
+The application will be available at [http://localhost:3000](http://localhost:3000).
+
+## Project Structure
+
+snake-game/client
+├── public/
+│ ├── index.html
+│ └── ...
+├── src/
+│ ├── components/
+│ │ ├── Apple.tsx
+│ │ ├── GameBoard.tsx
+│ │ ├── Snake.tsx
+│ │ └── ...
+│ ├── App.tsx
+│ ├── index.tsx
+│ └── ...
+├── package.json
+├── tsconfig.json
+└── ...
+
+### Main Components
+
+#### App.tsx
+
+The root component of the application. It sets up the main layout and includes the GameBoard component.
+
+#### GameBoard.tsx
+
+Manages the game state and renders the game board. Communicates with the backend API to start the game, validate moves, and end the game.
+
+#### Snake.tsx
+
+Renders the snake on the game board based on its current position.
+
+#### Apple.tsx
+
+Renders the apple on the game board based on its current position.
+
+### API Integration
+
+The frontend communicates with the backend API to manage the game state. The main API endpoints are:
+
+- `POST /api/start`: Starts a new game and initializes the game state.
+- `POST /api/validate`: Validates the moves and updates the game state.
+- `POST /api/end`: Ends the game and resets the game state.
+
+## Conclusion
+
+This documentation provides an overview of the Snake Game frontend application, including setup instructions, project structure, main components, and API integration. For more details, refer to the source code and comments within the code.
