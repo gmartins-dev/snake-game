@@ -1,6 +1,6 @@
-# Snake Game
+# Snake Game 🐍
 
-# Snake Game Documentation
+A simplified version of the nostalgic snake game from old Nokia phones, built using React and Golang.
 
 ## Backend (API)
 
