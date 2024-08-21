@@ -8,7 +8,8 @@ import (
 )
 
 func main() {
-    config.LoadConfig()
-    r := routes.SetupRouter()
-    log.Fatal(http.ListenAndServe(config.ServerAddress, r))
+	config.LoadConfig()
+	r := routes.SetupRouter()
+	log.Printf("Server is running on port %s", config.ServerAddress)
+	log.Fatal(http.ListenAndServe(config.ServerAddress, r))
 }

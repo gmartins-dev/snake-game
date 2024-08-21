@@ -10,5 +10,6 @@ func SetupRouter() *mux.Router {
     r := mux.NewRouter()
     r.HandleFunc("/start", handlers.StartGame).Methods("POST")
     r.HandleFunc("/validate", handlers.ValidateMoves).Methods("POST")
+    r.HandleFunc("/end", handlers.EndGame).Methods("POST")
     return r
 }
