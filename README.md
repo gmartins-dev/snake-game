@@ -271,6 +271,25 @@ Import the following JSON into Postman to test the API:
         }
       },
       "response": []
+    },
+    {
+      "name": "End Game",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:3001/end",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3001",
+          "path": ["end"]
+        }
+      },
+      "response": []
     }
   ]
 }
