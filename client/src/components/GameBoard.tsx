@@ -25,16 +25,22 @@ const GameBoard: React.FC = () => {
     startGame();
   }, []);
 
-  if (!gameState) {
-    return <div>Loading...</div>;
-  }
-
   return (
-    <div className='game-board'>
-      <Snake position={gameState.snake} />
-      <Apple position={gameState.apple} />
-      <div className='score'>Score: {gameState.score}</div>
-    </div>
+    <>
+      <div className='score'>
+        Score: {gameState ? gameState.score : 'Loading...'}
+      </div>
+      <div className='game-board'>
+        {gameState ? (
+          <>
+            <Snake position={gameState.snake} />
+            <Apple position={gameState.apple} />
+          </>
+        ) : (
+          <div className='loading-placeholder'>Loading...</div>
+        )}
+      </div>
+    </>
   );
 };
 

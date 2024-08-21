@@ -5,7 +5,8 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #f0f0f0;
+  background-color: #121212;
+  color: #e0e0e0;
 }
 
 .App {
@@ -16,8 +17,15 @@ body {
   position: relative;
   width: 200px;
   height: 200px;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-placeholder {
+  color: #e0e0e0;
 }
 
 .snake,
@@ -28,13 +36,14 @@ body {
 }
 
 .snake {
-  background-color: green;
+  background-color: #4caf50;
 }
 
 .apple {
-  background-color: red;
+  background-color: #f44336;
 }
 
 .score {
   margin-top: 10px;
+  color: #e0e0e0;
 }
